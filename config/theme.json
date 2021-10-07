@@ -1,0 +1,26 @@
+{
+  "light-theme": {
+    "background": "#f9f9f9",
+    "background_light": "#fff",
+    "background_dark": "#b3bfcb",
+    "primary": "#00758F",
+    "primary_dark": "#005366",
+    "primary_light": "#00a7cc",
+    "color": "#616161",
+    "color_dark": "#050505",
+    "color_light": "#9E9E9E"
+  },
+  "dark-theme": {
+    "background": "#181818",
+    "background_light": "#202020",
+    "background_dark": "#212121",
+    "primary": "#00a7cc",
+    "primary_dark": "#005366",
+    "primary_light": "#00758F",
+    "color": "#fff",
+    "color_dark": "#fff",
+    "color_light": "#424242"
+  }
+}
+
+

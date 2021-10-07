@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--color);
+}
+
+html {
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 14%;
+}
+
+.material-icons:hover
+{
+  color: var(--primary);
+}
+
+button { cursor: pointer; }

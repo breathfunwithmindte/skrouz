@@ -1,0 +1,19 @@
+[
+  {
+    "category": "mobile-phones",
+    "filters": [
+      {
+        "filtername": "Κατασκευαστές",
+        "category": "κινητα",
+        "filtertype": "radio",
+        "filtervalues": [
+          { "index": 0, "name": "xiaomi", "value": "xiaomi" },
+          { "index": 1, "name": "apple", "value": "apple" },
+          { "index": 2, "name": "sumsung", "value": "sumsung" },
+          { "index": 3, "name": "nokia", "value": "nokia" },
+          { "index": 4, "name": "sony", "value": "sony" }
+        ]
+      }
+    ]
+  }
+]

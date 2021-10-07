@@ -1,0 +1,19 @@
+<form class="filter-form">
+  <h1 class="aside-h1">Φιλτράρισμα</h1>
+
+  <% for( let i = 0; i < filters.length; i++ ) { %>
+      <% var f = filters[i] %> 
+      <% if (f.filtertype === 'radio') { %>
+        <!-- RADIO TYPE FILTER -->
+        <div class="filter-field-wrapper-multi">
+          <br />
+          <strong><%= f.filtername %></strong>
+          <br />
+          <% for( let j = 0; j < f.filtervalues.length; j++ ) { %>
+            <%- include("FComps/radio", {name: f.filtername, value: f.filtervalues[j].value})  %> 
+          <% } %>
+        </div>
+
+      <% } %> 
+  <% } %>
+</form>

@@ -1,0 +1,21 @@
+.page-aside {
+  width: 300px;
+  height: fit-content;
+  padding: 5px;
+}
+
+.filter-form
+{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.filter-field-wrapper-multi
+{
+  width: 100%;
+  border-bottom: 0.14px dotted var(--color_light);
+}
