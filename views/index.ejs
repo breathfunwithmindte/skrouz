@@ -20,27 +20,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="<%= config.domain + '/public/index.css' %>"></link>
   <link rel="stylesheet" href="<%= config.domain + '/public/header.css' %>"></link>
+  <link rel="stylesheet" href="<%= config.domain + '/public/section.css' %>"></link>
   <link rel="stylesheet" href="<%= config.domain + '/public/main.css' %>"></link>
   <link rel="stylesheet" href="<%= config.domain + '/public/aside.css' %>"></link>
   <script src="<%= config.domain + '/public/index.js' %>" defer></script>
-  <title>ToExoume</title>
+  <title>ToExoume <%= products.length %> </title>
 </head>
 <body>
   <%- include("Layout/Header"); %>
-  <nav class="nav">
-    <img src="<%= config.domain + '/public/images/phone1.png' %>" alt="" class="nav-image-left">
-    <section>
-      <p>Αγόρασε προϊόντα από διαφορετικά καταστήματα</p>
-      <strong>με ένα μόνο καλάθι στο ToExoume!</strong>
-    </section>
-    <img src="<%= config.domain + '/public/images/phone.png' %>" alt="" class="nav-image-right">
-  </nav>
+  <%- include("Layout/MainSection"); %> 
   <div class="page">
     <aside class="page-aside">
       <%- include("Components/Filters"); %>
     </aside>
-    <main>
-    
+    <main class="main">
+      <h2><%= category.label %> <span class="products-length">(<%= products_total %> προϊόντα)</span> </h2>
+      <div class="product_container">
+        <% for( let index = 0; index < products.length; index++ ) { %>
+          <%- include("ProductCard/main", { product: products[index] }) %> 
+          <% } %>
+      </div>
     </main>
   </div>
 </body>

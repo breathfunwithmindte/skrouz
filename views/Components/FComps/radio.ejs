@@ -46,10 +46,16 @@
 <div class="my-radio">
  
   <label for="#id#<%= name + value %>" class="radio-label">
-    <%= value %>
-    <input type="radio" name="<%= name %>" id="#id#<%= name + value %>" class="radio_input_real" style="display: none;" />
+    <%= valuename %>
+    <input 
+        type="radio" 
+        <%= queries.find(doc => doc.filtername === name && `${doc.filtervalue}` == `${value}`) ? "checked" : "" %>
+        onchange="handlechangefilter(event, '<%= method %>')" name="<%= name %>" id="#id#<%= name + value %>" class="radio_input_real" value="<%= value %>" 
+        style="display: none;" />
     <div class="radio_input_visible"></div>
-    
   </label>
-  
 </div>
+
+<script>
+  
+</script>
